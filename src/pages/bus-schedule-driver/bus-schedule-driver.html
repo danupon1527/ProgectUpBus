@@ -1,0 +1,51 @@
+<!--
+  Generated template for the BusScheduleDriverPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>ตารางการขับรถเมล์</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <!-- <ion-grid>
+  <ion-row>
+    <ion-col>
+      หมายเลขรถเมล์
+    </ion-col>
+    <ion-col>
+      เวลาขับรถเมล์
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-content>1</ion-content>
+    </ion-col>
+    <ion-col>
+      <ion-content>06.00 น.</ion-content>
+    </ion-col>
+  </ion-row>
+</ion-grid> -->
+  <table style="width:100%">
+      
+      
+      <tr>
+        <th>หมายเลขรถเมล์</th>
+        <th>เวลาขับรถเมล์</th>
+      </tr>
+
+      <tr *ngFor="let busschedule of busSchedule">  
+            <td>{{busschedule.id_bus_driver}}</td>
+            <td>{{busschedule.schedule_driver}}</td>
+                    
+      </tr>
+  
+  </table>
+
+</ion-content>

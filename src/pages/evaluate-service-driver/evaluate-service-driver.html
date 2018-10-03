@@ -1,0 +1,117 @@
+<!--
+  Generated template for the EvaluateServiceDriverPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>ประเมินพนักงานขับรถเมล์</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-title align='center'>เกณฑ์การให้คะแนน</ion-title>
+    <ion-row>
+      <ion-col align='center'>1=น้อยที่สุด,2=น้อย,3=ปานกลาง,4=มาก,5=มากที่สุด</ion-col>
+    </ion-row>
+  <!-- <ion-card *ngFor="let evaluatesbus of evaluateSbus">  -->
+  <div> 
+    <!-- (ngSubmit)=addScore() -->
+      <!-- <form name="scores" method="POST" action="testphp.php" > -->
+  <table style="width:100%">
+    
+    
+    <tr>
+      <th>ลำดับ</th>
+      <th rowspan="1">หัวข้อการประเมิน</th>
+      <th>ความพึงพอใจ</th>
+    </tr>
+   
+
+   
+    <tr *ngFor="let evaluatesdriver of evaluateSdriver">  
+      
+          
+          <td>{{evaluatesdriver.id}}</td>
+          <td>{{evaluatesdriver.evaluate_driver}}</td>
+          <td *ngIf="evaluatesdriver.id==1">
+           
+            <!-- <form name="scores" method="GET" action="insert_score_evaluate_service_bus.php"> -->
+              <input type="radio" name="score1" value="1" [(ngModel)]="score1">1 
+              <input type="radio" name="score1" value="2" [(ngModel)]="score1">2
+              <input type="radio" name="score1" value="3" [(ngModel)]="score1">3
+              <input type="radio" name="score1" value="4" [(ngModel)]="score1">4
+              <input type="radio" name="score1" value="5" [(ngModel)]="score1">5
+              <!-- <button ion-button type="submit" block (click)="showAlert()">บันทึกการลงคะแนน</button> -->
+            <!-- </form> -->
+          </td>
+          <td *ngIf="evaluatesdriver.id==2">
+           
+              <!-- <form name="scores" method="GET" action="insert_score_evaluate_service_bus.php"> -->
+                <input type="radio" name="score2" value="1" [(ngModel)]="score2">1 
+                <input type="radio" name="score2" value="2" [(ngModel)]="score2">2
+                <input type="radio" name="score2" value="3" [(ngModel)]="score2">3
+                <input type="radio" name="score2" value="4" [(ngModel)]="score2">4
+                <input type="radio" name="score2" value="5" [(ngModel)]="score2">5
+                <!-- <button ion-button type="submit" block (click)="showAlert()">บันทึกการลงคะแนน</button> -->
+              <!-- </form> -->
+          </td>
+         
+          
+          
+         
+           <!-- ---------------------------------------------------   
+              <td *ngIf="evaluatesbus.id==1">
+               
+                <ion-label>คะแนน={{todo.score1}}</ion-label>
+                 
+                  <ion-range max="5" min="1" step="1" snaps="true" [(ngModel)]="todo.score1" color="secondary" type="number" name="Score1">
+                
+                    <ion-label range-left>1</ion-label>
+                    <ion-label range-right>5</ion-label>
+
+                    
+                  </ion-range>
+                
+              </td>
+            
+              <td *ngIf="evaluatesbus.id==2">
+                <ion-label>คะแนน={{todo.score2}}</ion-label>
+               
+                  <ion-range max="5" min="1" step="1" snaps="true" [(ngModel)]="todo.score2" color="secondary" type="number" name="score2">
+                    <ion-label range-left>1</ion-label>
+                    <ion-label range-right>5</ion-label>
+                  </ion-range>
+                
+              </td>
+            -------------------------------------------------------- -->
+    </tr>
+ 
+  </table>
+  <button ion-button type="submit" block (click)="showAlert()" (click)="addScoreB(score1,score2)">บันทึกการลงคะแนน</button>
+  </div>>
+  <!-- <form name="scores" method="POST" (ngSubmit)=addScore()>
+    <button ion-button type="submit" block (click)="showAlert()">บันทึกการลงคะแนน</button>
+  </form> -->
+
+  <!-- <form method="GET" action="testphp.php">
+    <input type="text" name="Test">
+    <input type="submit" value="save">
+
+  </form> -->
+  <!-- <form (ngSubmit)="onSubmit(registForm)" #registForm="ngForm" novalidate >
+    <input type="text" ngModel name="fullname">
+    <button type="submit" [disabled]="!registForm.valid">Send</button>
+  </form> -->
+
+  
+  
+
+</ion-content>
+
+
+

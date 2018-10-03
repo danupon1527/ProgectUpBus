@@ -1,0 +1,37 @@
+<!--
+  Generated template for the HomeDriverPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <!-- <button ion-button (click)="menuDriver()">
+      <ion-icon name="menu"></ion-icon>
+    </button> -->
+    <button ion-button color="dark" clear>
+      <ion-icon color="danger" ios="ios-log-out" md="md-log-out" (click)="openPageHome()"> Logout</ion-icon>
+    </button>
+    <ion-title align='center'>Homedriver</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <button ion-item (click)="openPageT()">
+      ลงเวลาขับรถเมล์
+    </button>
+    <button ion-item (click)="openPageB()">
+      ตารางการขับรถเมล์
+    </button>
+    <button ion-item (click)="openPageE()">
+      แจ้งเหตุการฉุกเฉิน
+    </button>
+    <button ion-item (click)="openPageBA()">
+      ขอรถเมล์เพิ่ม
+    </button>
+  </ion-list>
+</ion-content>

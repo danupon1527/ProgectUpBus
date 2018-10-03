@@ -1,0 +1,40 @@
+<!--
+  Generated template for the TimeDrivePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>ลงเวลาขับรถเมล์</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card>
+    <!-- <ion-item>
+      <ion-label>เวลา</ion-label>
+      <ion-datetime displayFormat="MMM DD, YYYY HH:mm" [(ngModel)]="myDate"></ion-datetime>
+    </ion-item> -->
+    <!-- {{myDate}} -->
+    <button ion-button block color="secondary" (click)="ShowmyDate()">เริ่มต้นการขับรถ</button>
+    เวลาเริ่มต้น : {{dateShow}}
+  </ion-card>
+  <ion-card>
+    <button ion-button block color="danger" (click)="ShowEmyDate()">สิ่นสุดการขับรถ</button>
+    เวลาสิ้นสุด : {{EdateShow}}
+  </ion-card>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <button ion-button color="secondary" full (click)="showAlert()">บันทึก</button>
+      </ion-col>
+      <ion-col>
+        <button ion-button color="danger" full (click)="openPageH()">ยกเลิก</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

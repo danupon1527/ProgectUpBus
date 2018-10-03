@@ -1,0 +1,64 @@
+<!--
+  Generated template for the HomeUserPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<!-- <ion-header>
+
+  <ion-navbar>
+    <ion-title>homeUser</ion-title>
+  </ion-navbar>
+
+</ion-header> -->
+
+
+<ion-header>
+  <ion-navbar>
+    <!-- <button ion-button (click)="menuusers()">
+      <ion-icon name="menu"></ion-icon>
+    </button> -->
+    <!-- <button> -->
+    <button ion-button color="dark" clear>
+      <ion-icon color="danger" ios="ios-log-out" md="md-log-out" (click)="openPageHome()"> Logout</ion-icon>
+    </button>
+    <ion-title align='center'>homeuser</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <!-- <button ion-item (click)="openPageS()">
+      แนะนำการให้บริการ
+    </button> -->
+    <button ion-item (click)="openPageE()">
+      ประเมินการให้บริการ
+    </button>
+    <button ion-item (click)="openPageB()">
+      ขอรถเมล์เพิ่ม
+    </button>
+    <button ion-item (click)="openPageD()">
+      กำหนดเส้นทางการเดินทาง
+    </button>
+  </ion-list>
+  <!-- <button ion-button full (click)="openPageHome()">Logout</button> -->
+</ion-content>
+
+
+<!-- <ion-menu [content]="content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menus</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <button ion-item (click)="openPageH()">
+        Home
+      </button>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-nav #content [root]="rootPagess"></ion-nav> -->

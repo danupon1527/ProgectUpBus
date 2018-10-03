@@ -1,0 +1,35 @@
+<!--
+  Generated template for the EmergencyDriver_3Page page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>หอUP Dorm</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<ion-item>
+    <ion-label>สถานที่เกิดเหตุ</ion-label>
+      <ion-select [(ngModel)]="emergency">
+        <ion-option value="eme1">จุดจอดPKY-จุดจอดห้องสมุด</ion-option>
+        <ion-option value="eme2">จุดจอดห้องสมุด-จุดจอดเวียงพะเยา</ion-option>
+        <ion-option value="eme3">จุดจอดเวียงพะเยา-จุดจอดUP Dorm</ion-option>
+      </ion-select>
+  </ion-item>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <button ion-button color="secondary" full (click)="showAlert()">บันทึก</button>
+      </ion-col>
+      <ion-col>
+        <button ion-button color="danger" full (click)="openPageH()">ยกเลิก</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
