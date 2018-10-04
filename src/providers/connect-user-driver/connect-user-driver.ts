@@ -11,6 +11,7 @@ import { Injectable } from '@angular/core';
 export class ConnectUserDriverProvider {
 
   url="http://localhost/servicephp/loaddata_driver.php"
+  urlS="http://localhost/servicephp/loaddata_staff.php"
 
   constructor(public http: HttpClient) {
     console.log('Hello ConnectUserDriverProvider Provider');
@@ -18,6 +19,10 @@ export class ConnectUserDriverProvider {
 
   getData(){
     return this.http.get(this.url);
+    //return this.http.get(this.URL1);
+  }
+  getDataS(){
+    return this.http.get(this.urlS);
     //return this.http.get(this.URL1);
   }
 

@@ -48,6 +48,7 @@ import { Map1Page } from '../pages/map1/map1';
 import { Map2Page } from '../pages/map2/map2';
 import { Map3Page } from '../pages/map3/map3';
 import { InsertRequestsAddAllProvider } from '../providers/insert-requests-add-all/insert-requests-add-all';
+import { HomestaffPage } from '../pages/homestaff/homestaff';
 
 
 
@@ -88,7 +89,8 @@ import { InsertRequestsAddAllProvider } from '../providers/insert-requests-add-a
     MapDivideJourneyPage,
     Map1Page,
     Map2Page,
-    Map3Page
+    Map3Page,
+    HomestaffPage
   ],
   imports: [
     BrowserModule,
@@ -128,7 +130,8 @@ import { InsertRequestsAddAllProvider } from '../providers/insert-requests-add-a
     MapDivideJourneyPage,
     Map1Page,
     Map2Page,
-    Map3Page
+    Map3Page,
+    HomestaffPage
   ],
   providers: [
     StatusBar,

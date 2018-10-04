@@ -8,6 +8,8 @@ import { ConnectProvider } from '../../providers/connect/connect';
 import { HttpClientModule } from '../../../node_modules/@angular/common/http';
 import { ConnectUserDriverProvider } from '../../providers/connect-user-driver/connect-user-driver';
 import { setRootDomAdapter } from '@angular/platform-browser/src/dom/dom_adapter';
+import { HomestaffPage } from '../homestaff/homestaff';
+
 
 
 
@@ -28,6 +30,7 @@ export class LoginPage {
 
   userAll:any=[]
   userDriver:any=[]
+  Ustaff:any=[]
   
 
   // user_id:number
@@ -40,6 +43,8 @@ export class LoginPage {
   statusLoginisI:any
   statusLoginisDriverL:any
   statusLoginisDriverK:any
+  statusLoginisStaffM:any
+  statusLoginisStaffN:any
   statusLoginisDJ:any
   statusLoginisDI:any
 
@@ -64,6 +69,11 @@ export class LoginPage {
 
     this.connectUdriver.getData().subscribe(data => {
       this.userDriver=data
+      console.log(data)
+    })
+
+    this.connectUdriver.getDataS().subscribe(data => {
+      this.Ustaff=data
       console.log(data)
     })
   }
@@ -109,7 +119,7 @@ export class LoginPage {
         
         this.statusLoginisI=true
       }
-      else{
+      else if(this.todo.username==this.userDriver[i].user_driver){
         for(let k=0;k<this.userDriver.length;k++){
           if(this.todo.username==this.userDriver[k].user_driver){
             for(let l=0;l<this.userDriver.length;l++){
@@ -124,12 +134,29 @@ export class LoginPage {
         }
         this.statusLoginisDriverK
       }
+      else{
+        for(let m=0;m<this.Ustaff.length;m++){
+          if(this.todo.username==this.Ustaff[m].user_s){
+            for(let n=0;n<this.Ustaff.length;n++){
+              if(this.todo.password==this.Ustaff[n].pass_s){
+                this.statusLoginisStaffN=true
+              }
+            }
+            this.statusLoginisStaffN
+            console.log("statusLdriver:",this.statusLoginisStaffN)
+            this.statusLoginisStaffM=true
+          }
+        }
+        this.statusLoginisStaffM
+      }
 
     }
     this.statusLoginisI
     console.log("statusI:",this.statusLoginisI)
     this.statusLoginisDriverK
     console.log("statusKdriver:",this.statusLoginisDriverK)
+    this.statusLoginisStaffM
+    console.log("statusMstaff:",this.statusLoginisStaffM)
 
     if(this.statusLoginisJ==true&&this.statusLoginisI==true){
       this.showAlert(status='true')
@@ -138,6 +165,10 @@ export class LoginPage {
     else if(this.statusLoginisDriverL==true&&this.statusLoginisDriverK==true){
       this.showAlert(status='true')
       this.navCtrl.setRoot(HomeDriverPage)
+    }
+    else if(this.statusLoginisStaffM==true&&this.statusLoginisStaffN==true){
+      this.showAlert(status='true')
+      this.navCtrl.setRoot(HomestaffPage)
     }
     else{
       this.showAlert(status='false')
