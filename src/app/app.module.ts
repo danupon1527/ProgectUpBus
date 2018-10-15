@@ -49,6 +49,8 @@ import { Map2Page } from '../pages/map2/map2';
 import { Map3Page } from '../pages/map3/map3';
 import { InsertRequestsAddAllProvider } from '../providers/insert-requests-add-all/insert-requests-add-all';
 import { HomestaffPage } from '../pages/homestaff/homestaff';
+import { BusAddDriverPageModule } from '../pages/bus-add-driver/bus-add-driver.module';
+
 
 
 
@@ -90,7 +92,8 @@ import { HomestaffPage } from '../pages/homestaff/homestaff';
     Map1Page,
     Map2Page,
     Map3Page,
-    HomestaffPage
+    HomestaffPage,
+    BusAddDriverPageModule
   ],
   imports: [
     BrowserModule,
@@ -131,7 +134,8 @@ import { HomestaffPage } from '../pages/homestaff/homestaff';
     Map1Page,
     Map2Page,
     Map3Page,
-    HomestaffPage
+    HomestaffPage,
+    BusAddDriverPageModule
   ],
   providers: [
     StatusBar,

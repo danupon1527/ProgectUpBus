@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { BusAddDriver_1Page } from '../bus-add-driver-1/bus-add-driver-1';
-import { BusAddDriver_2Page } from '../bus-add-driver-2/bus-add-driver-2';
-import { BusAddDriver_3Page } from '../bus-add-driver-3/bus-add-driver-3';
+// import { BusAddDriver_1Page } from '../bus-add-driver-1/bus-add-driver-1';
+// import { BusAddDriver_2Page } from '../bus-add-driver-2/bus-add-driver-2';
+// import { BusAddDriver_3Page } from '../bus-add-driver-3/bus-add-driver-3';
 
 
 /**
@@ -19,21 +19,21 @@ import { BusAddDriver_3Page } from '../bus-add-driver-3/bus-add-driver-3';
 })
 export class BusAddDriverPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
+  // constructor(public navCtrl: NavController, public navParams: NavParams) {
+  // }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad BusAddDriverPage');
-  }
-  openPage1(){
-    this.navCtrl.push(BusAddDriver_1Page)
-  }
-  openPage2(){
-    this.navCtrl.push(BusAddDriver_2Page)
-  }
-  openPage3(){
-    this.navCtrl.push(BusAddDriver_3Page)
-  }
+  // ionViewDidLoad() {
+  //   console.log('ionViewDidLoad BusAddDriverPage');
+  // }
+  // openPage1(){
+  //   this.navCtrl.push(BusAddDriver_1Page)
+  // }
+  // openPage2(){
+  //   this.navCtrl.push(BusAddDriver_2Page)
+  // }
+  // openPage3(){
+  //   this.navCtrl.push(BusAddDriver_3Page)
+  // }
 
 
 }

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
 import { HomeDriverPage } from '../home-driver/home-driver';
-HomeDriverPage
+
 
 /**
  * Generated class for the BusAddDriver_1Page page.
