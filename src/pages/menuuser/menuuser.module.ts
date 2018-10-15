@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 import { MenuuserPage } from './menuuser';
 
@@ -9,5 +9,9 @@ import { MenuuserPage } from './menuuser';
   imports: [
     IonicPageModule.forChild(MenuuserPage),
   ],
+})
+@Component({
+  selector: 'page-menuuser',
+  templateUrl: 'menuuser.html',
 })
 export class MenuuserPageModule {}

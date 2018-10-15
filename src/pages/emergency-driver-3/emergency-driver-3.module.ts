@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 import { EmergencyDriver_3Page } from './emergency-driver-3';
 
@@ -9,5 +9,9 @@ import { EmergencyDriver_3Page } from './emergency-driver-3';
   imports: [
     IonicPageModule.forChild(EmergencyDriver_3Page),
   ],
+})
+@Component({
+  selector: 'page-emergency-driver-3',
+  templateUrl: 'emergency-driver-3.html',
 })
 export class EmergencyDriver_3PageModule {}

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage} from 'ionic-angular';
 // import { BusAddDriver_1Page } from '../bus-add-driver-1/bus-add-driver-1';
 // import { BusAddDriver_2Page } from '../bus-add-driver-2/bus-add-driver-2';
 // import { BusAddDriver_3Page } from '../bus-add-driver-3/bus-add-driver-3';

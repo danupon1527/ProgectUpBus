@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 import { TimeDrivePage } from './time-drive';
 
@@ -9,5 +9,9 @@ import { TimeDrivePage } from './time-drive';
   imports: [
     IonicPageModule.forChild(TimeDrivePage),
   ],
+})
+@Component({
+  selector: 'page-time-drive',
+  templateUrl: 'time-drive.html',
 })
 export class TimeDrivePageModule {}

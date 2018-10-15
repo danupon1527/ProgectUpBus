@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 import { MapDivideJourneyPage } from './map-divide-journey';
 
@@ -9,5 +9,9 @@ import { MapDivideJourneyPage } from './map-divide-journey';
   imports: [
     IonicPageModule.forChild(MapDivideJourneyPage),
   ],
+})
+@Component({
+  selector: 'page-map-divide-journey',
+  templateUrl: 'map-divide-journey.html',
 })
 export class MapDivideJourneyPageModule {}

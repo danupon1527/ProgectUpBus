@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 import { HomeDriverPage } from './home-driver';
 
@@ -9,5 +9,9 @@ import { HomeDriverPage } from './home-driver';
   imports: [
     IonicPageModule.forChild(HomeDriverPage),
   ],
+})
+@Component({
+  selector: 'page-home-driver',
+  templateUrl: 'home-driver.html',
 })
 export class HomeDriverPageModule {}

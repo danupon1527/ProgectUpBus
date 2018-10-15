@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 import { BusRequestsAdd_3Page } from './bus-requests-add-3';
 
@@ -9,5 +9,9 @@ import { BusRequestsAdd_3Page } from './bus-requests-add-3';
   imports: [
     IonicPageModule.forChild(BusRequestsAdd_3Page),
   ],
+})
+@Component({
+  selector: 'page-bus-requests-add-3',
+  templateUrl: 'bus-requests-add-3.html',
 })
 export class BusRequestsAdd_3PageModule {}

@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 import { Map2Page } from './map2';
 
@@ -9,5 +9,9 @@ import { Map2Page } from './map2';
   imports: [
     IonicPageModule.forChild(Map2Page),
   ],
+})
+@Component({
+  selector: 'page-map2',
+  templateUrl: 'map2.html',
 })
 export class Map2PageModule {}

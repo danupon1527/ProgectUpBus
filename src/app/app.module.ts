@@ -50,6 +50,39 @@ import { Map3Page } from '../pages/map3/map3';
 import { InsertRequestsAddAllProvider } from '../providers/insert-requests-add-all/insert-requests-add-all';
 import { HomestaffPage } from '../pages/homestaff/homestaff';
 import { BusAddDriverPageModule } from '../pages/bus-add-driver/bus-add-driver.module';
+import { BusAddDriver_1PageModule } from '../pages/bus-add-driver-1/bus-add-driver-1.module';
+import { BusAddDriver_2PageModule } from '../pages/bus-add-driver-2/bus-add-driver-2.module';
+import { BusAddDriver_3PageModule } from '../pages/bus-add-driver-3/bus-add-driver-3.module';
+import { BusRequestsAddPageModule } from '../pages/bus-requests-add/bus-requests-add.module';
+import { BusRequestsAdd_1PageModule } from '../pages/bus-requests-add-1/bus-requests-add-1.module';
+import { BusRequestsAdd_2PageModule } from '../pages/bus-requests-add-2/bus-requests-add-2.module';
+import { BusRequestsAdd_3PageModule } from '../pages/bus-requests-add-3/bus-requests-add-3.module';
+import { BusScheduleDriverPageModule } from '../pages/bus-schedule-driver/bus-schedule-driver.module';
+import { DivideJourneyPageModule } from '../pages/divide-journey/divide-journey.module';
+import { EmergencyDriverPageModule } from '../pages/emergency-driver/emergency-driver.module';
+import { EmergencyDriver_1PageModule } from '../pages/emergency-driver-1/emergency-driver-1.module';
+import { EmergencyDriver_2PageModule } from '../pages/emergency-driver-2/emergency-driver-2.module';
+import { EmergencyDriver_3PageModule } from '../pages/emergency-driver-3/emergency-driver-3.module';
+import { EvaluateServicePageModule } from '../pages/evaluate-service/evaluate-service.module';
+import { EvaluateServiceBusPageModule } from '../pages/evaluate-service-bus/evaluate-service-bus.module';
+import { EvaluateServiceDriverPageModule } from '../pages/evaluate-service-driver/evaluate-service-driver.module';
+import { HomeDriverPageModule } from '../pages/home-driver/home-driver.module';
+import { HomeUserPageModule } from '../pages/home-user/home-user.module';
+import { HomestaffPageModule } from '../pages/homestaff/homestaff.module';
+import { LoginPageModule } from '../pages/login/login.module';
+import { MapDivideJourneyPageModule } from '../pages/map-divide-journey/map-divide-journey.module';
+import { Map1PageModule } from '../pages/map1/map1.module';
+import { Map2PageModule } from '../pages/map2/map2.module';
+import { Map3PageModule } from '../pages/map3/map3.module';
+import { MenudriverPageModule } from '../pages/menudriver/menudriver.module';
+import { MenuuserPageModule } from '../pages/menuuser/menuuser.module';
+import { ServiceIntroPageModule } from '../pages/service-intro/service-intro.module';
+import { SettingsHomePageModule } from '../pages/settings-home/settings-home.module';
+import { TimeDrivePageModule } from '../pages/time-drive/time-drive.module';
+
+
+
+
 
 
 
@@ -93,7 +126,36 @@ import { BusAddDriverPageModule } from '../pages/bus-add-driver/bus-add-driver.m
     Map2Page,
     Map3Page,
     HomestaffPage,
-    BusAddDriverPageModule
+    BusAddDriverPageModule,
+    BusAddDriver_1PageModule,
+    BusAddDriver_2PageModule,
+    BusAddDriver_3PageModule,
+    BusRequestsAddPageModule,
+    BusRequestsAdd_1PageModule,
+    BusRequestsAdd_2PageModule,
+    BusRequestsAdd_3PageModule,
+    BusScheduleDriverPageModule,
+    DivideJourneyPageModule,
+    EmergencyDriverPageModule,
+    EmergencyDriver_1PageModule,
+    EmergencyDriver_2PageModule,
+    EmergencyDriver_3PageModule,
+    EvaluateServicePageModule,
+    EvaluateServiceBusPageModule,
+    EvaluateServiceDriverPageModule,
+    HomeDriverPageModule,
+    HomeUserPageModule,
+    HomestaffPageModule,
+    LoginPageModule,
+    MapDivideJourneyPageModule,
+    Map1PageModule,
+    Map2PageModule,
+    Map3PageModule,
+    MenudriverPageModule,
+    MenuuserPageModule,
+    ServiceIntroPageModule,
+    SettingsHomePageModule,
+    TimeDrivePageModule  
   ],
   imports: [
     BrowserModule,
@@ -135,7 +197,36 @@ import { BusAddDriverPageModule } from '../pages/bus-add-driver/bus-add-driver.m
     Map2Page,
     Map3Page,
     HomestaffPage,
-    BusAddDriverPageModule
+    BusAddDriverPageModule,
+    BusAddDriver_1PageModule,
+    BusAddDriver_2PageModule,
+    BusAddDriver_3PageModule,
+    BusRequestsAddPageModule,
+    BusRequestsAdd_1PageModule,
+    BusRequestsAdd_2PageModule,
+    BusRequestsAdd_3PageModule,
+    BusScheduleDriverPageModule,
+    DivideJourneyPageModule,
+    EmergencyDriverPageModule,
+    EmergencyDriver_1PageModule,
+    EmergencyDriver_2PageModule,
+    EmergencyDriver_3PageModule,
+    EvaluateServicePageModule,
+    EvaluateServiceBusPageModule,
+    EvaluateServiceDriverPageModule,
+    HomeDriverPageModule,
+    HomeUserPageModule,
+    HomestaffPageModule,
+    LoginPageModule,
+    MapDivideJourneyPageModule,
+    Map1PageModule,
+    Map2PageModule,
+    Map3PageModule,
+    MenudriverPageModule,
+    MenuuserPageModule,
+    ServiceIntroPageModule,
+    SettingsHomePageModule,
+    TimeDrivePageModule
   ],
   providers: [
     StatusBar,

@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 import { MenudriverPage } from './menudriver';
 
@@ -9,5 +9,9 @@ import { MenudriverPage } from './menudriver';
   imports: [
     IonicPageModule.forChild(MenudriverPage),
   ],
+})
+@Component({
+  selector: 'page-menudriver',
+  templateUrl: 'menudriver.html',
 })
 export class MenudriverPageModule {}

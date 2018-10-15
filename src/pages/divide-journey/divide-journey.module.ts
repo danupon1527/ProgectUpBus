@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 import { DivideJourneyPage } from './divide-journey';
 
@@ -9,5 +9,9 @@ import { DivideJourneyPage } from './divide-journey';
   imports: [
     IonicPageModule.forChild(DivideJourneyPage),
   ],
+})
+@Component({
+  selector: 'page-divide-journey',
+  templateUrl: 'divide-journey.html',
 })
 export class DivideJourneyPageModule {}
